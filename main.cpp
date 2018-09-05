@@ -19,11 +19,11 @@ int play_audio()
 	int randNum  = rand()%numberOfSongs +1;
 
 
-
+	if(randNum<21)
 	snprintf(path,500,"mpg123 /home/pi/dev/gladpi/Apeture/%d.mp3",randNum); 
-      	
+    else
+    snprintf(path,500,"mpg123 /home/pi/dev/gladpi/Apeture/%d.wav",randNum);
 	cout << path << endl;
-	const char *b = "mpg123 /home/pi/dev/gladpi/Apeture/1.mp3";
  
 	int ret = 0;
 	 
@@ -40,7 +40,6 @@ int play_audio()
 
 int main(){
 	system("espeak 'Alert. glad pi is now online.'");
-	system("epseak 'A new version of gladpi has been released.");
 	srand(5);
 	wiringPiSetup(); 
 	pinMode(7,INPUT);
