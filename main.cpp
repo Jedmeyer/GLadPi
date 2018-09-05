@@ -22,7 +22,7 @@ int play_audio()
 	if(randNum<21)
 	snprintf(path,500,"mpg123 /home/pi/dev/gladpi/Apeture/%d.mp3",randNum); 
     else
-    snprintf(path,500,"mpg123 /home/pi/dev/gladpi/Apeture/%d.wav",randNum);
+    snprintf(path,500,"aplay /home/pi/dev/gladpi/Apeture/%d.wav",randNum);
 	cout << path << endl;
  
 	int ret = 0;
