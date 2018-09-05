@@ -17,6 +17,9 @@ int play_audio()
 {
 	char *path = new char[500];
 	int randNum  = rand()%numberOfSongs +1;
+
+
+
 	snprintf(path,500,"mpg123 /home/pi/dev/gladpi/Apeture/%d.mp3",randNum); 
       	
 	cout << path << endl;
@@ -36,20 +39,21 @@ int play_audio()
 
 
 int main(){
-system("espeak 'Alert. glad pi is now online.'");
+	system("espeak 'Alert. glad pi is now online.'");
+	system("epseak 'A new version of gladpi has been released.");
 	srand(5);
-wiringPiSetup(); 
-pinMode(7,INPUT);
-while (true){
+	wiringPiSetup(); 
+	pinMode(7,INPUT);
+	while (true){
 	
 		
-	if(digitalRead(7) >0){
-		cout << "I DETECT YO HOE ASS\n";
-		play_audio(); 
-		usleep(10000000);
-	}
+		if(digitalRead(7) >0){
+			cout << "I DETECT YOU\n";
+			play_audio(); 
+			usleep(10000000);
+		}
 
-}
+	}
 return 0;
 
 
