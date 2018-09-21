@@ -134,13 +134,14 @@ int main(){
 	while (true){
 	
 		
-		if(digitalRead(7) >0)
+		if(digitalRead(7) >0){
 			cout << "I DETECT YOU\n";
 			play_audio(); 
 			usleep(10000000);
-	
-
+		}
+	}
 		
 return 0;
 }
+
 
