@@ -1,0 +1,7 @@
+Welcome to GLaDPi, a randomized blurter that 
+yells at whoever walks by!
+The PIR Sensor GPIO Pin must be hardcoded.
+See "int pinNum" (L113) to set yours before 
+compilation. 
+A speaker and Power Supply must also 
+be connected for obvious reasons. 
