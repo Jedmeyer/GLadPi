@@ -3,8 +3,11 @@ yells at whoever walks by!
 
 Place Files you would like the Blurter to yell
 inside of the file labelled "Apeture". The program will autodetect it.
-It will then yell it, and stay quiet for 10 seconds.
+It will then yell one randomly, and stay quiet for 10 seconds.
 
+
+This requires the wiringPi. Learn more 
+about wiringPi at: (http://wiringpi.com/reference/setup/)
 
 The PIR Sensor GPIO Pin must be hardcoded:
 See "int pinNum" (L113) to set yours before 
@@ -13,3 +16,8 @@ compilation.
 
 A speaker and Power Supply must also 
 be connected for obvious reasons. 
+
+
+Compile using:
+
+g++ -o main main.cpp -lwiringPi
