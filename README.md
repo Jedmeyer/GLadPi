@@ -2,7 +2,7 @@ Welcome to GLaDPi, a randomized blurter that
 yells at whoever walks by!
 
 Place Files you would like the Blurter to yell
-inside of the file labelled "Apeture". The program will autodetect it.
+inside of the folder labelled "Apeture". The program will autodetect it.
 It will then yell one randomly, and stay quiet for 10 seconds.
 
 
