@@ -10,7 +10,7 @@ This requires the wiringPi. Learn more
 about wiringPi at: (http://wiringpi.com/reference/setup/)
 
 The PIR Sensor GPIO Pin must be hardcoded:
-See "int pinNum" (L113) to set yours before 
+See the call to `pinMode` (Line 133) to set yours before 
 compilation. 
 
 
