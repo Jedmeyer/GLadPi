@@ -20,4 +20,4 @@ be connected for obvious reasons.
 
 Compile using:
 
-g++ -o main main.cpp -lwiringPi
+`g++ -o main main.cpp -lwiringPi`
